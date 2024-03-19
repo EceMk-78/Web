@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <center>
+    <div style="max-width:1000px;">
+
+        <div id="logo" style="background-color:antiquewhite; height:150px; line-height:150px;">
+            <a href="Default.aspx"> <img src="img/logo.png" style="width:150px; float:left;"  /><span style="float:left; font-size:50px; color:black;">KİTAPÇIM</span></a>
+        </div>
+        <div style="font-size:20px; text-align:right;">
+            <a href="sepet.aspx">Sepetim</a>
+        </div>
+
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+
+        <div id="taban" style="clear:both; background-color:antiquewhite; height:150px;">
+
+            <div style="float:left;  width:33%;"><span style="font-size:22px;  font-weight:bold; border-bottom:2px solid grey;">İletişim</span><div style="margin:15px;">
+                <br /><b>Adres:</b>Ardahan Merkez<br /><b>Telefon:</b>0123456789<br /><b>Eposta:</b>info@kitaplik.com</div></div>
+           
+            <div style="float:left;  width:33%;"><span style="font-size:22px;  font-weight:bold; border-bottom:2px solid grey;">Katagoriler</span><div style="margin:15px;">
+                <br /><a href="#"  style="color:black;">İndirimli Ürünler</a><br /><a href="#"  style="color:black;">Ders Kitapları</a><br /><a href="#"  style="color:black;">Romanlar</a> </div></div>
+           
+            <div style="float:left;  width:33%;"><span style="font-size:22px;  font-weight:bold; border-bottom:2px solid grey;">Bağlantılar</span><div style="margin:15px;">
+                <br /><a href="#" style="color:black;">D&R</a><br /><a href="#"  style="color:black;">Kitapyurdu</a><br /></div></div>
+</div>
+
+    </div>
+
+        </center>
+    </form>
+</body>
+</html>
